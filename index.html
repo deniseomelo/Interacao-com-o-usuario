@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fazendo Cálculos</title>
+    <style>
+        body { font: 12pt Arial;}
+        button { font-size: 12pt; padding: 30px;}
+
+    </style>
+</head>
+<body>
+    <h1>Senac - TADS - PW -  2 periodo</h1>
+    <h2>Aula #2 Introdução ao JS</h2>
+    <h3>Fazendo Cálculos</h3>
+    <button onclick="calculadora()">Clique para calcular</button>
+    <section id="res">
+        <p>Atenção: O resultado será colocado aqui..</p>
+    </section>
+    <script>
+        window.alert('Seja bem-vindo(a) ao meu site!')
+
+        function calculadora() {
+            let n1 = Number(window.prompt('Digite um número: '))
+            let res = document.querySelector('section#res')
+
+            res.innerHTML = `<p> O dobro de ${n1} é ${n1*2} e a metade é ${n1/2}!</p>`
+        }
+    </script>
+    
+</body>
+</html>
